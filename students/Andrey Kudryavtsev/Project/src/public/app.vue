@@ -35,7 +35,6 @@ export default {
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(item)
             }).then(d => d.json())
-            console.log(d)
         },
         putData(url, delta) {
             return fetch(url, {
